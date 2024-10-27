@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TS Zoo</title>
+  <script type="module" src="/src/main.ts" defer></script>
+
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <div id="animalFormContainer" class="animalFormContainer">
+    <form id="animalForm">
+
+      <h2>Add Animal</h2>
+
+      <label for="animalType">Animal :</label>
+      <select id="animalType">
+        <option value="zebra">Zebra</option>
+        <option value="elephant">Elephant</option>
+        <option value="tiger">Tiger</option>
+      </select>
+      <br> <br>
+      <label for="animalName">Name:</label>
+      <input type="text" id="animalName" required /><br>
+      <br>
+      <label for="animalAge">Age:</label>
+      <input type="number" id="animalAge" required /><br>
+      <br>
+      <button id="animalBtn" class="animalBtn" type="submit">Add Animal</button>
+    </form>
+  </div>
+
+
+  <div id="employeeFormContainer" class="employeeFormContainer">
+
+    <form id="employeeForm">
+
+      <h2>Add Employee</h2>
+      <label for="employeeType">Employee Type:</label>
+      <select id="employeeType">
+        <option value="zookeeper">Zookeeper</option>
+      </select> <br> <br>
+      <label for="trainingDate">Safety Training Date:</label>
+      <input type="date" id="trainingDate" required /><br>
+      <br>
+      <button id="employeeBtn" class="employeeBtn" type="submit">Add Employee</button>
+    </form>
+  </div>
+
+  <br>
+  <div class="logBtns" id="logBtns">
+    <button class="logAnimals" id="logAnimals">Log All Animals</button>
+    <br>
+    <button class="logEmployees" id="logEmployees">Log All Employees</button>
+  </div>
+</body>
+
+</html>
