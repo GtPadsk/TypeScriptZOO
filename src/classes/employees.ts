@@ -20,7 +20,7 @@ export class Zookeeper extends Employee {
 
     private feedLog: { animalName: string; time: Date }[] = [];
 
-    constructor(isEmployeeAtZoo: boolean, safetyTrainingCompletionDate: Date) {
+    constructor(type: Zookeeper, isEmployeeAtZoo: boolean, safetyTrainingCompletionDate: Date) {
         super(isEmployeeAtZoo, safetyTrainingCompletionDate);
     }
 
@@ -39,6 +39,5 @@ export class allEmployees {
     addEmployee(employee: Employee) { this.employees.push(employee); }
     listEmployees() { return this.employees; }
 }
-
 
 // const allEmployees = new allEmployees();
